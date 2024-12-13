@@ -1,46 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Digital Edge Academy</title>
-		<link rel="stylesheet" href="./styles/index.css" />
-	</head>
-	<body>
-		<header>
-			<nav>
-				<a href="#" class="logo">Hello World!</a>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#courses">Courses</a></li>
-					<li><a href="#team">Team</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Edge Academy</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo">Hello World!</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <video class="video-background" autoplay muted loop>
+        <source src="./assets/videoplayback.webm" type="video/mp4" />
+        Ваш браузер не поддерживает HTML5 видео.
+      </video>
 
-		<video class="video-background" autoplay muted loop>
-			<source src="./assets/videoplayback.webm" type="video/mp4" />
-			Ваш браузер не поддерживает HTML5 видео.
-		</video>
+      <div class="main-page-text">
+        <h1>Digital Edge Academy</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae,
+          necessitatibus quod quasi soluta odio id. Illo magni, sequi voluptate
+          consectetur officia fugiat, numquam pariatur sed dolores quaerat
+          tempore tenetur nesciunt.
+        </p>
+      </div>
 
-		<div class="main-page-text">
-			<h1>Digital Edge Academy</h1>
-			<p>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae,
-				necessitatibus quod quasi soluta odio id. Illo magni, sequi voluptate
-				consectetur officia fugiat, numquam pariatur sed dolores quaerat tempore
-				tenetur nesciunt.
-			</p>
-		</div>
+      <div class="content">
+        <section class="stats-section" id="about">
+          <div class="stats-title">About us</div>
+          <div class="stats-text">
+            At Digital Edge Academy, we are passionate about shaping the future
+            of IT professionals. As a leading educational platform, we offer a
+            wide range of cutting-edge courses designed to equip students with
+            the skills they need to thrive in the fast-paced tech industry. Our
+            mission is to empower learners worldwide, enabling them to achieve
+            their career goals and stay ahead in the ever-evolving digital
+            landscape.
+          </div>
+          <div class="stats-numbers">
+            <div class="stat">
+              <div class="stat-value" data-target="24">0</div>
+              <div>Countries</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value" data-target="110">0</div>
+              <div>Branches</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value" data-target="2000">0</div>
+              <div>Students</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value" data-target="500">0</div>
+              <div>Instructors</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value" data-target="31000">0</div>
+              <div>Graduates</div>
+            </div>
+          </div>
+          <div class="video-container">
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              style="
+                width: 80%;
+                max-width: 800px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+              "
+            >
+              <source src="./assets/about.webm" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </section>
+      </div>
+    </main>
 
-		<div class="content">
-			<h2>Контент страницы</h2>
-			<p>Здесь размещается основной контент вашей страницы.</p>
-			<p>Вы можете добавлять текст, изображения, галереи и многое другое.</p>
-		</div>
-
-		<script src="./js/index.js"></script>
-	</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
