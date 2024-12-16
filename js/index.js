@@ -3,6 +3,9 @@ window.addEventListener('scroll', function () {
 	nav.classList.toggle('sticky', window.scrollY > 0);
 });
 
+const currentYear = new Date().getFullYear();
+document.getElementById('current-year').textContent = currentYear;
+
 function animateNumbers(element) {
 	const target = +element.dataset.target;
 	const increment = target / 100;

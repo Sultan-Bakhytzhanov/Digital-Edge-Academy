@@ -212,9 +212,235 @@
 						</div>
 					</div>
 				</section>
+				<section class="team-section" id="team">
+					<h2>Our team</h2>
+					<div class="team-member">
+						<div class="member-info">
+							<img
+								src="./assets/man-white.png"
+								alt="Преподаватель 1"
+								class="member-img"
+							/>
+							<div class="info-text">
+								<h3>John Smith</h3>
+								<p><strong>Job:</strong> Lead Developer at "Tech Innovators"</p>
+								<p>
+									<strong>Experience:</strong> 8 years in web development, 5
+									years of teaching frontend development
+								</p>
+								<p>
+									<strong>Personal Information:</strong> Interested in new
+									technologies and artificial intelligence, he is also
+									passionate about chess and participates in local tournaments.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="team-member reverse">
+						<div class="member-info">
+							<div class="info-text">
+								<h3>Jane Doe</h3>
+								<p>
+									<strong>Job:</strong> Senior Developer at "DataScience Hub"
+								</p>
+								<p>
+									<strong>Experience:</strong> 10 years in software development,
+									specializing in artificial intelligence and machine learning
+								</p>
+								<p>
+									<strong>Personal Information:</strong> In her free time, she
+									enjoys yoga and photography. She loves traveling and shares
+									her experiences of different countries through her blog.
+								</p>
+							</div>
+							<img
+								src="./assets/Jane.png"
+								alt="Преподаватель 2"
+								class="member-img"
+							/>
+						</div>
+					</div>
+					<div class="team-member">
+						<div class="member-info">
+							<img
+								src="./assets/man-with-arms-crossed.png"
+								alt="Преподаватель 3"
+								class="member-img"
+							/>
+							<div class="info-text">
+								<h3>Mark Wilson</h3>
+								<p><strong>Job:</strong> DevOps Engineer at "Cloud Systems"</p>
+								<p>
+									<strong>Experience:</strong> 7 years in DevOps and cloud
+									technologies, experienced with Docker, Kubernetes, CI/CD
+								</p>
+								<p>
+									<strong>Personal Information:</strong> In his free time, he
+									enjoys cycling and participates in competitions. He is
+									passionate about automating processes in his everyday life.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="team-member reverse">
+						<div class="member-info">
+							<div class="info-text">
+								<h3>Emily Davis</h3>
+								<p><strong>Job:</strong> QA Engineer at "TestPro"C</p>
+								<p>
+									<strong>Experience:</strong> 5 years in software testing,
+									experience with various test automation tools
+								</p>
+								<p>
+									<strong>Personal Information:</strong> A passionate lover of
+									cinema and theater, she actively participates in organizing
+									local film festivals.
+								</p>
+							</div>
+							<img
+								src="./assets/Emily Davis.png"
+								alt="Преподаватель 2"
+								class="member-img"
+							/>
+						</div>
+					</div>
+				</section>
+				<section class="contact-section" id="contact">
+					<div class="container">
+						<h2>Свяжитесь с нами</h2>
+						<p>
+							Заполните форму, чтобы задать вопрос или получить дополнительную
+							информацию о наших курсах.
+						</p>
+
+						<form action="/submit-form" method="POST" class="contact-form">
+							<div class="form-group">
+								<label for="name">Ваше имя</label>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									placeholder="Введите ваше имя"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="email">Ваш email</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									placeholder="Введите ваш email"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="message">Сообщение</label>
+								<textarea
+									id="message"
+									name="message"
+									placeholder="Ваше сообщение"
+									rows="5"
+									required
+								></textarea>
+							</div>
+
+							<button type="submit" class="submit-btn">Отправить</button>
+						</form>
+					</div>
+				</section>
 			</div>
 		</main>
+		<footer class="footer">
+			<div class="footer__addr">
+				<h1 class="footer__logo">Digital Edge Academy</h1>
 
+				<h2>Contact</h2>
+
+				<address>
+					5534 Somewhere In. The World 22193-10212<br />
+
+					<a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+				</address>
+			</div>
+
+			<ul class="footer__nav">
+				<li class="nav__item">
+					<h2 class="nav__title">Media</h2>
+
+					<ul class="nav__ul">
+						<li>
+							<a href="#">Online</a>
+						</li>
+
+						<li>
+							<a href="#">Print</a>
+						</li>
+
+						<li>
+							<a href="#">Alternative Ads</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="nav__item nav__item--extra">
+					<h2 class="nav__title">Technology</h2>
+
+					<ul class="nav__ul nav__ul--extra">
+						<li>
+							<a href="#">Hardware Design</a>
+						</li>
+
+						<li>
+							<a href="#">Software Design</a>
+						</li>
+
+						<li>
+							<a href="#">Digital Signage</a>
+						</li>
+
+						<li>
+							<a href="#">Automation</a>
+						</li>
+
+						<li>
+							<a href="#">Artificial Intelligence</a>
+						</li>
+
+						<li>
+							<a href="#">IoT</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="nav__item">
+					<h2 class="nav__title">Legal</h2>
+
+					<ul class="nav__ul">
+						<li>
+							<a href="#">Privacy Policy</a>
+						</li>
+
+						<li>
+							<a href="#">Terms of Use</a>
+						</li>
+
+						<li>
+							<a href="#">Sitemap</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<div class="legal">
+				<p>
+					&copy; <span id="current-year"></span> Digital Edge Academy. All
+					rights reserved.
+				</p>
+			</div>
+		</footer>
 		<script src="./js/index.js"></script>
 	</body>
 </html>
