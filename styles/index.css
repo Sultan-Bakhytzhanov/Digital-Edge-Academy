@@ -13,7 +13,7 @@ body {
 }
 
 .video-background {
-  filter: brightness(80%);
+  filter: brightness(70%);
   position: absolute;
   top: 0;
   left: 0;
@@ -157,6 +157,13 @@ nav ul li a {
   margin-top: 50px;
   display: flex;
   justify-content: center;
+}
+
+.video-container video {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-highlights {
