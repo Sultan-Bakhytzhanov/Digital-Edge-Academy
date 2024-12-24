@@ -38,3 +38,40 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(statsSection);
+
+document
+	.getElementById('contactForm')
+	.addEventListener('submit', async function (event) {
+		event.preventDefault(); // Остановить стандартное поведение формы
+
+		// Получить данные из формы
+		const name = document.getElementById('name').value;
+		const email = document.getElementById('email').value;
+		const message = document.getElementById('message').value;
+
+		try {
+			// Отправка данных на сервер
+			const response = await fetch('http://127.0.0.1:5000/send-email', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({ name, email, message }),
+			});
+
+			// Обработка ответа
+			const result = await response.json();
+			document.getElementById('responseMessage').innerText = result.message;
+		} catch (error) {
+			console.error('Error:', error);
+			document.getElementById('responseMessage').innerText =
+				'An error occurred while sending your message.';
+		}
+	});
+
+const burgerMenu = document.getElementById('burger-menu');
+const navList = document.querySelector('nav ul');
+
+burgerMenu.addEventListener('click', () => {
+	navList.classList.toggle('active');
+});
