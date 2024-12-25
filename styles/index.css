@@ -117,7 +117,12 @@ nav ul li a {
 }
 
 /* Адаптивность для маленьких экранов */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+	.main-page-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	nav ul {
 		display: none;
 		position: absolute;
@@ -144,6 +149,17 @@ nav ul li a {
 
 	nav ul li a {
 		margin: 10px 0;
+	}
+
+	.stats-numbers {
+		flex-direction: column;
+	}
+	.course-card {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	.course-card img {
+		width: 50%;
 	}
 }
 
@@ -756,10 +772,6 @@ textarea {
 
 	nav ul li {
 		margin: 0 10px;
-	}
-
-	.burger-menu {
-		display: none;
 	}
 
 	/* Контент */
